@@ -14,7 +14,7 @@ const Login = () =>{
     const submitHandler = (event)=>{
         event.preventDefault();
         setLoading(true);
-        axios.post('http://localhost:4200/user/login',{
+        axios.post('https://shibi-appfrontend.vercel.app/user/login',{
           email:email,
           password:password                   
         })
