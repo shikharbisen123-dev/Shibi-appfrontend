@@ -12,7 +12,7 @@ const Home = () => {
     getHomeDetails();
   },[])
   const getHomeDetails = ()=>{
-    axios.get('https://shibi-appfrontend.vercel.app/course/home/',{
+    axios.get('https://shibi-app.vercel.app/course/home/',{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
