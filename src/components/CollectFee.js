@@ -18,7 +18,7 @@ const CollectFee = () => {
   },[])
 
   const getCourses = () => {
-      axios.get("https://shibi-appfrontend.vercel.app/course/all-courses", {
+      axios.get("https://shibi-app.vercel.app/course/all-courses", {
               headers: {
                 Authorization: "Bearer " + localStorage.getItem("token"),
               },
@@ -36,7 +36,7 @@ const CollectFee = () => {
 
   const submitHandler = (e)=>{
     e.preventDefault();
-    axios.post("https://shibi-appfrontend.vercel.app/fee/add-fee",{
+    axios.post("https://shibi-app.vercel.app/fee/add-fee",{
       fullName:fullName,
       amount:amount,
       phone:phone,
