@@ -24,7 +24,7 @@ const Signup = () =>{
         formData.append('phone',phone);
         formData.append('password',password);
         formData.append('image',image);
-        axios.post('http://localhost:4200/user/signup',formData)
+        axios.post('https://shibi-appfrontend.vercel.app/user/signup',formData)
         .then(res=>{
             setLoading(false);
             toast.success('your account is created')
