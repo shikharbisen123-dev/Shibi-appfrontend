@@ -10,7 +10,7 @@ const PaymentHistory = () => {
   },[]);
 
   const getPaymentHistory = ()=>{
-        axios.get('http://localhost:4200/fee/payment-history',{
+        axios.get('https://shibi-appfrontend.vercel.app/fee/payment-history',{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
