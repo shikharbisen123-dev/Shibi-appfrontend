@@ -14,7 +14,7 @@ const StudentDetail = () => {
     
 
   const getStudentDetail = useCallback(()=>{
-        axios.get('http://localhost:4200/student/student-detail/'+params.id,{
+        axios.get('https://shibi-appfrontend.vercel.app/student/student-detail/'+params.id,{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
@@ -38,7 +38,7 @@ const StudentDetail = () => {
     const deleteStudent = (studentId)=>{
         if(window.confirm('are you sure want to delete ?'))
         {
-            axios.delete('http://localhost:4200/student/'+studentId,{
+            axios.delete('https://shibi-appfrontend.vercel.app/student/'+studentId,{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
