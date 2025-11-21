@@ -42,7 +42,7 @@ const AddStudent = () => {
 
   const getCourses = () => {
     axios
-      .get("http://localhost:4200/course/all-courses", {
+      .get("https://shibi-appfrontend.vercel.app/course/all-courses", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -73,7 +73,7 @@ const AddStudent = () => {
     
 if(location.state)
 {
-   axios.put('http://localhost:4200/student/'+location.state.student._id, formData, {
+   axios.put('https://shibi-appfrontend.vercel.app/student/'+location.state.student._id, formData, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -93,7 +93,7 @@ if(location.state)
 
 else
   {
-    axios.post("http://localhost:4200/student/add-student", formData, {
+    axios.post("https://shibi-appfrontend.vercel.app/student/add-student", formData, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
