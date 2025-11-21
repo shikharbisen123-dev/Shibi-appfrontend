@@ -12,7 +12,7 @@ const Courses = () => {
     },[])
 
     const getCourses = ()=>{
-        axios.get('http://localhost:4200/course/all-courses',{
+        axios.get('https://shibi-appfrontend.vercel.app/course/all-courses',{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
