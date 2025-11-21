@@ -12,7 +12,7 @@ const Students = () => {
   },[])
 
   const getStudentList =  ()=>{
-        axios.get('https://shibi-appfrontend.vercel.app/student/all-students',{
+        axios.get('https://shibi-app.vercel.app/student/all-students',{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
