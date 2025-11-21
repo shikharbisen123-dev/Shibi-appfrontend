@@ -12,7 +12,7 @@ const CourseDetail = () => {
     
 
     const getCourseDetail = useCallback(()=>{
-        axios.get('http://localhost:4200/course/course-detail/'+params.id,{
+        axios.get('https://shibi-appfrontend.vercel.app/course/course-detail/'+params.id,{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
@@ -37,7 +37,7 @@ const CourseDetail = () => {
     const deleteCourse = (courseId)=>{
         if(window.confirm('are you sure want to delete ?'))
         {
-            axios.delete('http://localhost:4200/course/'+courseId,{
+            axios.delete('https://shibi-appfrontend.vercel.app/course/'+courseId,{
             headers:{
                 Authorization:'Bearer ' + localStorage.getItem('token')
         }
