@@ -57,7 +57,7 @@ const AddCourse = () => {
 
     if(location.state)
     {
-      axios.put('http://localhost:4200/course/'+location.state.course._id,formData,{
+      axios.put('https://shibi-appfrontend.vercel.app/course/'+location.state.course._id,formData,{
       headers:{
         Authorization:'Bearer ' + localStorage.getItem('token')
       }
@@ -76,7 +76,7 @@ const AddCourse = () => {
     }
     else
     {
-      axios.post('http://localhost:4200/course/add-course',formData,{
+      axios.post('https://shibi-appfrontend.vercel.app/course/add-course',formData,{
       headers:{
         Authorization:'Bearer ' + localStorage.getItem('token')
       }
